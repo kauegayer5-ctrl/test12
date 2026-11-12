@@ -1,0 +1,42 @@
+/*
+ * TOKENS DA MARCA MAYÔ — único lugar para cores e fontes.
+ * Cores extraídas do LOGO-MAYO.webp e do PDF do cardápio (07/26).
+ * Para trocar as fontes quando o bar enviar as oficiais, altere só as três
+ * variáveis --font-* abaixo (e os imports em src/styles/fonts.ts).
+ */
+@theme {
+  /* Marca */
+  --color-royal: #2e3192; /* azul do logo: marca, destaques, botões principais */
+  --color-royal-700: #24277a; /* hover/pressed do royal */
+  --color-navy: #103b74; /* azul-marinho do cardápio: títulos e grafismos */
+  --color-navy-soft: #30457b; /* azul dos títulos da carta de drinks: texto */
+  --color-cream: #eae8df; /* fundo do cardápio: fundo base do site */
+  --color-cream-deep: #dfdcd0; /* superfície levemente mais escura sobre o creme */
+  --color-paper: #f6f4ec; /* papel dos cards de ingresso */
+  --color-amber: #fdb737; /* selos Novidade / Mais pedido e script: detalhes e chamadas */
+  --color-sand: #f1d399; /* faixa "Adicionais" / "Opções de proteína" do cardápio */
+  --color-white: #ffffff;
+
+  /* Atmosfera de pôr do sol — só em gradientes, nunca como cor de interface */
+  --color-dusk-1: #103b74;
+  --color-dusk-2: #2e3192;
+  --color-dusk-3: #8a4f6a;
+  --color-dusk-4: #e0703a;
+  --color-dusk-5: #f6a23a;
+  --color-dusk-6: #fdd27a;
+
+  /* Tipografia */
+  --font-display: 'Bebas Neue', 'Oswald', 'Arial Narrow', sans-serif; /* títulos condensados */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif; /* texto corrido */
+  --font-script: 'Sacramento', 'Brush Script MT', cursive; /* só palavras de destaque */
+
+  /* Raio e sombras */
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(16 59 116 / 0.06), 0 8px 24px -12px rgb(16 59 116 / 0.22);
+  --shadow-card-hover: 0 2px 4px rgb(16 59 116 / 0.08), 0 18px 40px -16px rgb(16 59 116 / 0.35);
+  --shadow-ticket: 0 2px 3px rgb(10 14 60 / 0.18), 0 22px 40px -18px rgb(10 14 60 / 0.55);
+  --shadow-ticket-hover: 0 4px 6px rgb(10 14 60 / 0.2), 0 34px 60px -20px rgb(10 14 60 / 0.65);
+
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+

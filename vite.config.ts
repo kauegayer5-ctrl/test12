@@ -1,0 +1,26 @@
+import path from 'node:path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: { '@': path.resolve(__dirname, './src') },
+  },
+  server: {
+    watch: {
+      ignored: [
+        '**/.agents/**',
+        '**/.taste-skill/**',
+        '**/shots/**',
+        '**/test*/**',
+        '**/BRAND/**',
+        '**/MENU/**',
+        '**/AGENDA-SEMANAL/**',
+        '**/media/**',
+      ],
+    },
+  },
+});
+
